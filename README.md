@@ -25,6 +25,19 @@ The system uses a five-fold ensemble of distilled Sound Event Detection (SED) mo
 
 ---
 
+## Model Files
+
+This repository expects five distilled SED ONNX models:
+
+- sed_fold0.onnx
+- sed_fold1.onnx
+- sed_fold2.onnx
+- sed_fold3.onnx
+- sed_fold4.onnx
+
+On Kaggle these are available from:
+
+/kaggle/input/datasets/tuckerarrants/bc2026-distilled-sed-public/
 ## 📊 Configuration Summary
 
 | Parameter         | Value |
