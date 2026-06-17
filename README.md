@@ -25,6 +25,16 @@ The system uses a five-fold ensemble of distilled Sound Event Detection (SED) mo
 
 ---
 
+## 📈 Status
+
+| Item | Status |
+|--------|--------|
+| Competition | BirdCLEF+ 2026 |
+| Models | Distilled SED Ensemble |
+| Species | 234 |
+| Inference | ONNX Runtime |
+| Validation Results | Pending |
+| Repository Status | Active Development |
 
 ## Repository Structure
 
@@ -50,9 +60,11 @@ The repository expects the following ONNX models:
 - sed_fold3.onnx
 - sed_fold4.onnx
 
-On Kaggle these are available from:
+On Kaggle, the models can be attached as a Dataset and accessed from:
 
+```text
 /kaggle/input/datasets/tuckerarrants/bc2026-distilled-sed-public/
+```  
 
 ## 📊 Configuration Summary
 
@@ -71,6 +83,24 @@ On Kaggle these are available from:
 > Validation metrics and runtime benchmarks will be reported after full experimental evaluation.
 
 ---
+
+## 📄 Output
+
+The pipeline generates:
+
+```text
+submission.csv
+```
+
+with the format:
+
+```text
+row_id,species_1,species_2,...,species_234
+rec_001_5,0.12,0.04,...,0.01
+rec_001_10,0.15,0.03,...,0.02
+```
+
+
 
 ## 🚀 Quick Start
 
@@ -157,8 +187,12 @@ This project is licensed under the MIT License.
 
 ---
 
-## 📧 Contact
 
-Maya Karipel
+## 🙏 Acknowledgments
+
+- Kaggle for hosting the BirdCLEF+ 2026 competition
+- ImageCLEF for organizing the BirdCLEF challenge
+- Tucker Arrants for releasing the distilled SED models
+- PyTorch and ONNX Runtime developers
 
 Email: [maya.karipel@gmail.com](mailto:maya.karipel@gmail.com)
