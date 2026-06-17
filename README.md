@@ -38,6 +38,21 @@ This repository expects five distilled SED ONNX models:
 On Kaggle these are available from:
 
 /kaggle/input/datasets/tuckerarrants/bc2026-distilled-sed-public/
+
+BirdCLEF-Ensemble/
+│
+├── birdclef_production.py
+├── birdclef_simple.py
+├── birdclef_optimized.py
+├── requirements.txt
+│
+└── models/
+    ├── sed_fold0.onnx
+    ├── sed_fold1.onnx
+    ├── sed_fold2.onnx
+    ├── sed_fold3.onnx
+    └── sed_fold4.onnx
+
 ## 📊 Configuration Summary
 
 | Parameter         | Value |
